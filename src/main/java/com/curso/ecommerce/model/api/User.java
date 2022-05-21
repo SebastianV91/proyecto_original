@@ -6,6 +6,7 @@ package com.curso.ecommerce.model.api;
  *
  */
 public class User {
+	
 	private Integer id;
 	private String user;
 	private String password;

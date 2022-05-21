@@ -18,15 +18,15 @@ import com.curso.ecommerce.model.api.User;
  *
  */
 @Service
-public class UserService {
-	@Autowired
-	private UserDao userDao;
+public class UserService extends UserDao{
+//	@Autowired
+//	private UserDao userDao;
 
 	@Autowired
 	private UserLegacyDao userLegacyDao;
 
 	public Map<String, Object> getUsers() throws Exception {
-		return userDao.getTESTRepository("Sebastian");
+		return getTESTRepository("Sebastian");
 	}
 
 	public List<User> getLegacyUsers() {
